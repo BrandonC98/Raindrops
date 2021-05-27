@@ -61,8 +61,17 @@ namespace RaindropTestFramework
         }
 
 
-        [TestCase(0, "0")]
+        [TestCase(70, "PlangPlong")]
+        [TestCase(140, "PlangPlong")]
+        public void Raindrop_Returns_The_PlingPlong_when_given_factor_of_5_and_7(int input, string expected)
+        {
 
+            Assert.That(RainDrop.Raindrop(input), Is.EqualTo(expected));
+
+        }
+
+
+        [TestCase(0, "0")]
         public void Raindrop_Returns_0_when_given_0(int input, string expected)
         {
 
