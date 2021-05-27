@@ -34,7 +34,6 @@ namespace RaindropTestFramework
         }
 
         [TestCase(1, "1")]
-        [TestCase(11, "11")]
         [TestCase(13, "13")]
         public void Raindrop_Returns_The_number_when_given_a_number_with_no_factors(int input, string expected)
         {
@@ -45,8 +44,26 @@ namespace RaindropTestFramework
 
         [TestCase(30, "PlingPlang")]
         [TestCase(15, "PlingPlang")]
-        [TestCase(15, "PlingPlang")]
         public void Raindrop_Returns_The_PlingPlong_when_given_factor_of_3_and_5(int input, string expected)
+        {
+
+            Assert.That(RainDrop.Raindrop(input), Is.EqualTo(expected));
+
+        }
+
+        [TestCase(21, "PlingPlong")]
+        [TestCase(42, "PlingPlong")]
+        public void Raindrop_Returns_The_PlingPlong_when_given_factor_of_3_and_7(int input, string expected)
+        {
+
+            Assert.That(RainDrop.Raindrop(input), Is.EqualTo(expected));
+
+        }
+
+
+        [TestCase(0, "0")]
+
+        public void Raindrop_Returns_0_when_given_0(int input, string expected)
         {
 
             Assert.That(RainDrop.Raindrop(input), Is.EqualTo(expected));
