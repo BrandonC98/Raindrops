@@ -10,6 +10,7 @@ namespace Raindrop
 
             if (num % 3 == 0) return "Pling";
             else if (num % 5 == 0) return "Plang";
+            else if (num % 7 == 0) return "Plong";
 
             return num.ToString();
 

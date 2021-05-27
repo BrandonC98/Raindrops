@@ -12,6 +12,9 @@ namespace RaindropTestFramework
         [TestCase(5, "Plang")]
         [TestCase(10, "Plang")]
         [TestCase(11, "11")]
+        [TestCase(7, "Plong")]
+        [TestCase(14, "Plong")]
+        [TestCase(13, "13")]
         public void Raindrop_Returns_The_Correct_value(int input, string expected)
         {
 
