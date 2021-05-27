@@ -8,6 +8,8 @@ namespace Raindrop
         public static string Raindrop(int num)
         {
 
+            if (num % 3 == 0) return "Pling";
+
             return num.ToString();
 
         }
