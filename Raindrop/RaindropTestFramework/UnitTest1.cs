@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Raindrop;
 
 namespace RaindropTestFramework
 {
@@ -10,9 +11,11 @@ namespace RaindropTestFramework
         }
 
         [Test]
-        public void Test1()
+        public void Raindrop_Returns_The_Correct_value()
         {
-            Assert.Pass();
+
+            Assert.That(RainDrop.Raindrop(1), Is.EqualTo("1"));
+
         }
     }
 }
