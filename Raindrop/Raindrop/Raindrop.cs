@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace Raindrop
 {
     public class RainDrop
@@ -11,6 +10,7 @@ namespace Raindrop
             if (num == 0) return num.ToString();
 
             string result = "";
+
             if (num % 3 == 0) result += "Pling";
             if (num % 5 == 0) result += "Plang";
             if (num % 7 == 0) result += "Plong";
